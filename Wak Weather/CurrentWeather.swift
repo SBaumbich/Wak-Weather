@@ -15,9 +15,7 @@ struct CurrentWeather {
     let precipProbability: Double
     let summary: String
     let icon: String
-}
 
-extension CurrentWeather {
     var iconImage: UIImage {
         switch icon {
         case "clear-day": return #imageLiteral(resourceName: "clear-day")
@@ -33,3 +31,4 @@ extension CurrentWeather {
         default: return #imageLiteral(resourceName: "default")
         }
     }
+}
